@@ -22,5 +22,19 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+      <!-- For microsoft redirect -->
+      <activity
+        android:name="net.openid.appauth.RedirectUriReceiverActivity"
+        android:exported="true">
+        <intent-filter>
+          <action android:name="android.intent.action.VIEW"/>
+          <category android:name="android.intent.category.DEFAULT"/>
+          <category android:name="android.intent.category.BROWSABLE"/>
+          <data
+            android:host="com.zelomeetings"
+            android:path="/lPZSqV6dsYwY8YGcZxHGS5grkQM="
+            android:scheme="msauth" />
+        </intent-filter>
+      </activity>
     </application>
 </manifest>

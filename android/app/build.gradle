@@ -84,6 +84,10 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        manifestPlaceholders = [
+             appAuthRedirectScheme: "com.zelomeetings",
+             appAuthRedirectScheme: 'com.googleusercontent.apps.245989026495-mk374knehmq7ktu6h3st0g18u1rcbd7s',
+        ]
     }
     signingConfigs {
         debug {
